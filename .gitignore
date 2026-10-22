@@ -1,0 +1,31 @@
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs / IDE
+.vscode/
+.idea/
+*.swp
+
+# Dépendances et builds
+node_modules/
+vendor/
+dist/
+build/
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Secrets et configuration locale WordPress
+.env
+.env.*
+wp-config.php
+
+# Archives et exports
+*.zip
+*.rar
+*.7z
+*.sql
