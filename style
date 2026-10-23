@@ -1,0 +1,89 @@
+/*
+Theme Name:   Meeco
+Theme URI:    https://github.com/madobrq/meeco
+Description:  Thème enfant du projet Meeco (Eco Challenge), site de défis écologiques personnalisés pour les 18-30 ans.
+Author:       Mado Braquenier, Iliya Grebenko
+Template:     twentytwentyfive
+Version:      0.1.0
+Text Domain:  meeco
+*/
+
+/* ==========================================================
+   Variables de la charte visuelle Meeco (Brief 5)
+   Règle : jamais de valeur écrite à la main, tout passe par ces variables.
+   ========================================================== */
+:root {
+	/* Couleurs (noms d'usage, pas de teinte) */
+	--couleur-fond-defaut: #EFE8D6;
+	--couleur-fond-surface: #F7F3E8;
+	--couleur-texte-defaut: #0A3323;
+	--couleur-texte-discret: #55594F;
+	--couleur-action-principal: #0A3323;
+	--couleur-action-texte: #EFE8D6;
+	--couleur-action-survol: #0F4A33;
+	--couleur-action-actif: #06241A;
+	--couleur-desactive-fond: #DDD6C2;
+	--couleur-desactive-texte: #6E6A5C;
+	--couleur-bordure-defaut: #857F6C;
+	--couleur-bordure-douce: #CFC8B4;
+	--couleur-marque-corail: #E89E91; /* logo uniquement */
+	--couleur-marque-petrole: #295562; /* logo uniquement */
+
+	/* Espacements */
+	--espace-xs: 4px;
+	--espace-s: 8px;
+	--espace-m: 16px;
+	--espace-l: 24px;
+	--espace-xl: 32px;
+	--espace-xxl: 48px;
+
+	/* Rayons */
+	--rayon-s: 8px;
+	--rayon-m: 16px;
+	--rayon-l: 24px;
+	--rayon-pilule: 999px;
+
+	/* Ombre (un seul niveau) */
+	--ombre-douce: 0 2px 8px rgba(10, 51, 35, 0.12);
+
+	/* Mouvement */
+	--mouvement-rapide: 150ms;
+	--mouvement-normale: 250ms;
+	--mouvement-lente: 400ms;
+	--mouvement-courbe: cubic-bezier(0.2, 0, 0, 1);
+
+	/* Typographie */
+	--police-titre: "Fredoka", sans-serif;
+	--police-texte: "Figtree", sans-serif;
+}
+
+/* Base : texte courant Figtree 16/24 sur fond crème */
+body {
+	background-color: var(--couleur-fond-defaut);
+	color: var(--couleur-texte-defaut);
+	font-family: var(--police-texte);
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1 {
+	font-family: var(--police-titre);
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 34px;
+}
+
+h2 {
+	font-family: var(--police-titre);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+/* Respect du réglage « réduire les animations » : fondu de 150 ms */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: var(--mouvement-rapide) !important;
+		transition-duration: var(--mouvement-rapide) !important;
+	}
+}
