@@ -21,7 +21,7 @@ Notre personnage principal est Lucie, 21 ans : elle voudrait faire plus pour l'e
 | Membre | Profil | GitHub |
 |---|---|---|
 | **Mado Braquenier** | Direction de projet, UX/UI, identité visuelle et contenus | [@madobrq](https://github.com/madobrq) |
-| **Iliya Grebenko** | Développement WordPress et qualité (tests, SEO, accessibilité) | [@pseudo](https://github.com/pseudo) |
+| **Iliya Grebenko** | Développement WordPress et qualité (tests, SEO, accessibilité) | [@pseudo](https://github.com/griliya96) |
 
 ## Outils utilisés
 
